@@ -24,14 +24,14 @@ class _OTPControllerState extends State<OTPController> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Text("OTP Verification"),
+        title: const Text("OTP Verification"),
       ),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Image.asset("assets/images/password.png"),
             ),
           ],
