@@ -79,20 +79,24 @@ class _OTPControllerState extends State<OTPController> {
                 height: 20,
               ),
               Center(
-                child: Padding(
-                    padding: const EdgeInsets.all(40.0),
-                    child: OTPTextField(
-                      length: 4,
-                      width: MediaQuery.of(context).size.width,
-                      textFieldAlignment: MainAxisAlignment.spaceAround,
-                      fieldWidth: 80,
-                      fieldStyle: FieldStyle.underline,
-                      style: const TextStyle(fontSize: 17),
-                      onCompleted: (pin) {
-                        print("Completed:" + pin);
-                      },
-                      onChanged: (pin) {},
-                    )),
+                child: Column(
+                  children: [
+                    Padding(
+                        padding: const EdgeInsets.all(40.0),
+                        child: OTPTextField(
+                          length: 4,
+                          width: MediaQuery.of(context).size.width,
+                          textFieldAlignment: MainAxisAlignment.spaceAround,
+                          fieldWidth: 40,
+                          fieldStyle: FieldStyle.underline,
+                          style: const TextStyle(fontSize: 17),
+                          onCompleted: (pin) {
+                            print("Completed:" + pin);
+                          },
+                          onChanged: (pin) {},
+                        )),
+                  ],
+                ),
               ),
             ],
           ),

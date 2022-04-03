@@ -11,7 +11,7 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
-  String dialCodeDigits = "+00";
+  String dialCodeDigits = "";
   final TextEditingController _controller = TextEditingController();
 
   @override
