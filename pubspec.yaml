@@ -37,6 +37,7 @@ dependencies:
   firebase_auth: ^3.3.11
   provider: ^6.0.2
   country_code_picker: ^2.0.2
+  otp_text_field: ^1.1.2
 
 dev_dependencies:
   flutter_test:
